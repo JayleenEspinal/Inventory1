@@ -38,14 +38,15 @@ public class InventoryManagementSystem {
                         System.out.println("User object is null");
                     }
                 }
-                
 
-                DatabaseUtility.closeConnection(c); // Pass the Connection object to closeConnection
+
+                // Close the connection using DatabaseUtility
+                DatabaseUtility.closeConnection(c);
 
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        } 
+        }
     }
 }
 
